@@ -8,36 +8,97 @@
   <link rel="icon" href="assets/icon.png">
   <link rel="stylesheet" href="assets/site.css">
 </head>
-<body>
-  <div class="wrap">
-    <a class="brand" href="./"><img src="assets/icon.png" alt=""><span>Scanbound</span></a>
-    <nav aria-label="Pages">
-      <a href="./" aria-current="page">Home</a>
-      <a href="support/">Support</a>
-      <a href="privacy/">Privacy Policy</a>
-    </nav>
+<body class="home">
+  <header class="sky">
+    <div class="sky__top">
+      <a class="brand" href="./"><img src="assets/logo.webp" width="800" height="144" alt="Scanbound"></a>
+      <nav aria-label="Pages">
+        <a href="./" aria-current="page">Home</a>
+        <a href="support/">Support</a>
+        <a href="privacy/">Privacy Policy</a>
+      </nav>
+    </div>
 
-    <h1>Every barcode is a Hero.</h1>
-    <p class="lede">Scan the barcodes and QR codes around you to reveal Heroes, build a team, and send it into battle.</p>
+    <div class="sky__title">
+      <img class="sky__logo" src="assets/logo.webp" width="800" height="144" alt="Scanbound">
+      <h1>Every barcode is a Hero.</h1>
+      <p>Scan the codes around you, reveal the Hero hiding in each one, and build a team that can outlast every rival.</p>
+    </div>
 
-    <section>
-      <h2>The short version</h2>
-      <ul>
-        <li>Plays fully offline. No account to make, nothing to sign in to.</li>
-        <li>No ads, no analytics, no tracking.</li>
-        <li>Free to play, with one optional purchase: the Supporter Pack, which lets you wear every look of every Hero you know and changes nothing in battle.</li>
-      </ul>
-    </section>
+    <div class="lineup" aria-hidden="true">
+      <img src="assets/heroes/mage.webp" alt="" class="lineup__hero lineup__hero--edge">
+      <img src="assets/heroes/robot.webp" alt="" class="lineup__hero">
+      <img src="assets/heroes/superhero.webp" alt="" class="lineup__hero">
+      <img src="assets/heroes/black_knight.webp" alt="" class="lineup__hero lineup__hero--lead">
+      <img src="assets/heroes/barbarian.webp" alt="" class="lineup__hero">
+      <img src="assets/heroes/space_ranger.webp" alt="" class="lineup__hero">
+      <img src="assets/heroes/skeleton_necromancer.webp" alt="" class="lineup__hero lineup__hero--edge">
+    </div>
+  </header>
 
-    <section>
-      <h2>Need help?</h2>
-      <p>Answers to common questions, and how to reach the developer.</p>
+  <main class="wrap">
+    <h2 class="band-title">How it plays</h2>
+    <ol class="steps">
+      <li class="step">
+        <div class="step__art step__art--scan" aria-hidden="true">
+          <svg viewBox="0 0 120 120" role="presentation">
+            <path d="M18 44V30a12 12 0 0 1 12-12h14M76 18h14a12 12 0 0 1 12 12v14M102 76v14a12 12 0 0 1-12 12H76M44 102H30a12 12 0 0 1-12-12V76" />
+            <g class="bars"><rect x="36" y="40" width="5" height="40"/><rect x="45" y="40" width="3" height="40"/><rect x="52" y="40" width="7" height="40"/><rect x="63" y="40" width="3" height="40"/><rect x="70" y="40" width="5" height="40"/><rect x="79" y="40" width="3" height="40"/></g>
+            <line class="laser" x1="26" y1="60" x2="94" y2="60" />
+          </svg>
+        </div>
+        <h3>Scan</h3>
+        <p>Point your camera at any barcode or QR code: a cereal box, a book, a soda can. Every code holds a Hero.</p>
+      </li>
+      <li class="step">
+        <div class="step__art step__art--reveal" aria-hidden="true"><img src="assets/heroes/clown.webp" alt=""></div>
+        <h3>Reveal</h3>
+        <p>Meet your Main Hero. You don't choose it: which Hero it is, its weapon, rarity and stats all come from the code you scanned.</p>
+      </li>
+      <li class="step">
+        <div class="step__art step__art--wide"><img src="assets/art/board.webp" alt="" width="960" height="373"></div>
+        <h3>Build</h3>
+        <p>Recruit two Supporting Heroes as the run goes, trade up in the shop, and drag your team into formation on the board.</p>
+      </li>
+      <li class="step">
+        <div class="step__art step__art--duel" aria-hidden="true">
+          <img src="assets/heroes/barbarian.webp" alt="">
+          <span>VS</span>
+          <img src="assets/heroes/skeleton_necromancer.webp" alt="">
+        </div>
+        <h3>Battle</h3>
+        <p>Auto-chess battles: your team fights on its own, round after round, against rival Tacticians. Every run is a fresh roguelike climb. Be the last Tactician standing to win.</p>
+      </li>
+    </ol>
+
+    <div class="pair">
+      <section>
+        <h2>Every code is its own Hero</h2>
+        <p>The same barcode always reveals the same Hero, on any phone. Swap codes with friends, hunt for the rare ones, and fill your HeroDex with dozens of Heroes and every look they can wear.</p>
+        <p>Every run you finish unlocks that Hero's full details in your HeroDex. The more Heroes you know, the better you can plan synergies and build stronger teams in future runs.</p>
+      </section>
+      <section>
+        <h2>Fair by design</h2>
+        <ul class="facts">
+          <li><strong>Plays offline.</strong> No account and no sign-in.</li>
+          <li><strong>No ads.</strong> Nothing to watch, nothing in your way.</li>
+          <li><strong>No tracking.</strong> Scanbound collects no data. No photos are ever taken.</li>
+          <li><strong>Free to play.</strong> One optional Supporter Pack supports the developer and shows your appreciation. As a thank-you, it unlocks every variant of every Hero, ready to equip on each Hero you know. Cosmetics only: it never changes anything in battle.</li>
+        </ul>
+      </section>
+    </div>
+
+    <section class="help">
+      <div>
+        <h2>Need help?</h2>
+        <p>Answers to common questions, and how to reach the developer.</p>
+      </div>
       <a class="button" href="support/">Visit Support</a>
     </section>
 
     <footer>
       <p>Scanbound is made by J33NO. &middot; <a href="privacy/">Privacy Policy</a> &middot; <a href="support/">Support</a></p>
     </footer>
-  </div>
+  </main>
 </body>
 </html>
