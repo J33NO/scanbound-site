@@ -8,3 +8,5 @@ Public pages for the Scanbound game, served by GitHub Pages:
 These URLs are stored in App Store Connect and linked from inside the game, so **do not move or rename them**.
 
 Plain static HTML with no build step. The Oxanium font is self-hosted under the SIL Open Font License (`assets/fonts/Oxanium-OFL-1.1.txt`), so a visit contacts no third party.
+
+When `assets/site.css` changes, bump the `?v=` number on its `<link>` in every page. GitHub Pages lets browsers cache files for 10 minutes, so without the bump a visitor can get the new page with the old stylesheet.
