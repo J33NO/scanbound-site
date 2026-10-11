@@ -4,6 +4,7 @@ Public pages for the Scanbound game, served by GitHub Pages:
 
 - Privacy Policy: https://j33no.github.io/scanbound-site/privacy/
 - Support: https://j33no.github.io/scanbound-site/support/
+- Press Kit: https://j33no.github.io/scanbound-site/press/ (full-resolution zip and 4K videos are assets on the `press-kit` GitHub Release)
 
 These URLs are stored in App Store Connect and linked from inside the game, so **do not move or rename them**.
 
