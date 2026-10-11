@@ -19,6 +19,7 @@
   --cyan-soft: #bfefff;
   --gold: #ffd36a;
   --display: "Oxanium", "Trebuchet MS", system-ui, sans-serif;
+  --round: "Fredoka", var(--display);
   --body: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
   color-scheme: dark;
 }
@@ -181,7 +182,7 @@ footer a { color: var(--soft); }
   font-display: swap;
 }
 
-.home { --round: "Fredoka", var(--display); }
+
 
 .sky {
   position: relative;
@@ -569,3 +570,15 @@ footer a { color: var(--soft); }
 .swatch--icon img { background: var(--panel); padding: 0.75rem; }
 
 .press .help { margin-top: 2rem; }
+
+/* ---- Inner pages ----------------------------------------------------------------------------
+   Every page opens with the same sky and the same top bar as Home, so the logo and menu never
+   move; inner pages trade Home's lineup for a short title band. */
+.sky--page .sky__title { padding-block: clamp(1.75rem, 5vw, 3rem) clamp(1.75rem, 4vw, 2.5rem); }
+
+.sky--page h1 { margin: 0 0 0.4rem; font-size: clamp(1.9rem, 5vw, 2.6rem); }
+
+
+
+/* The title band is one line on every inner page, so moving between them never shifts the content. */
+.sky--page h1 { white-space: nowrap; margin-bottom: 0; }

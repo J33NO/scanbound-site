@@ -6,20 +6,25 @@
   <title>Press Kit - Scanbound</title>
   <meta name="description" content="Scanbound press kit: fact sheet, description, developer story, videos, screenshots, Hero art, logos and press contact.">
   <link rel="icon" href="../assets/icon.png">
-  <link rel="stylesheet" href="../assets/site.css?v=3">
+  <link rel="stylesheet" href="../assets/site.css?v=4">
 </head>
 <body class="press">
-  <div class="wrap">
-    <a class="brand" href="../"><img src="../assets/logo.webp" width="800" height="144" alt="Scanbound"></a>
-    <nav aria-label="Pages">
-      <a href="../">Home</a>
-      <a href="./" aria-current="page">Press Kit</a>
-      <a href="../support/">Support</a>
-      <a href="../privacy/">Privacy Policy</a>
-    </nav>
+  <header class="sky sky--page">
+    <div class="sky__top">
+      <a class="brand" href="../"><img src="../assets/logo.webp" width="800" height="144" alt="Scanbound"></a>
+      <nav aria-label="Pages">
+        <a href="../">Home</a>
+        <a href="./" aria-current="page">Press Kit</a>
+        <a href="../support/">Support</a>
+        <a href="../privacy/">Privacy Policy</a>
+      </nav>
+    </div>
+    <div class="sky__title">
+      <h1>Press Kit</h1>
+    </div>
+  </header>
 
-    <h1>Press Kit</h1>
-
+  <main class="wrap">
     <figure class="feature-video">
       <video src="media/header-loop.mp4" poster="media/header-loop.jpg" width="1920" height="824" autoplay muted loop playsinline preload="metadata" aria-label="Scanbound gameplay: Heroes battling on the board, with the line Scan. Build. Battle."></video>
     </figure>
@@ -170,9 +175,9 @@
     </section>
 
     <footer>
-      <p>Scanbound is made by J33NO. &middot; <a href="../support/">Support</a> &middot; <a href="../privacy/">Privacy Policy</a></p>
+      <p>Scanbound is made by J33NO. &middot; <a href="../press/">Press Kit</a> &middot; <a href="../support/">Support</a> &middot; <a href="../privacy/">Privacy Policy</a></p>
     </footer>
-  </div>
+  </main>
   <script>
     // Respect Reduce Motion: the banner loop does not play on its own.
     if (matchMedia("(prefers-reduced-motion: reduce)").matches) {
