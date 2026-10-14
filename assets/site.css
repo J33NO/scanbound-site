@@ -246,6 +246,28 @@ footer a { color: var(--soft); }
 }
 
 
+/* The App Store link under Home's tagline: the one gold button, so it reads as the thing to do. */
+.store {
+  display: grid;
+  justify-items: center;
+  gap: 0.55rem;
+  margin-top: 1.4rem;
+}
+
+.button--store {
+  min-height: 3rem;
+  padding-inline: 1.4rem;
+  border-color: rgba(255, 211, 106, 0.8);
+  background: linear-gradient(180deg, #3a2c0c, #1a1204);
+  color: var(--gold);
+  font-size: 0.86rem;
+}
+
+.store span {
+  color: var(--soft);
+  font-size: 0.92rem;
+}
+
 .lineup {
   position: relative;
   z-index: 1;
